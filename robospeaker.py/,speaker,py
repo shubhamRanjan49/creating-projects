@@ -1,0 +1,15 @@
+import pyttsx3
+
+def speak(text) :
+     engine= pyttsx3.init()
+     engine.say(text)
+     engine.runAndWait()
+     
+if __name__ == '__main__':
+    print("Welcome Shubham, here's your Robospeaker 1.1")
+
+    while True:
+        x = input("Enter what you want me to speak: ")
+        if x.lower() == "z":
+            break
+        speak(x)
